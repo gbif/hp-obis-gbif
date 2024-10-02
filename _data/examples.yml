@@ -38,3 +38,15 @@ report:
   - text: Joint strategy
     href: https://docs.gbif.org/obis-gbif-joint-strategy/en/
     isPrimary: true
+
+dashboard: 
+  klass: dashboard
+  title: "Data"
+  description: |
+    Data mobilized by our community
+  config: 
+    predicate:
+      type: equals
+      key: networkKey
+      value: 2b7c7b4f-4d4f-40d3-94de-c28b6fa054a6
+    charts: [dataQuality, occurrenceSummary, month, taxa, country, iucnCounts, iucn, datasetKey, publisherKey]

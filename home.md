@@ -15,6 +15,9 @@ cta:
   - text: About
     href: "#report"
     isPrimary: true
+  - text: Records
+    href: "/occurrence/search"
+    isPrimary: false
 composition:
   - type: heroVideo # the block type
   - type: split
@@ -34,6 +37,8 @@ composition:
         tollebat altius](http://virgineusque.net/est.html).
   - type: stories
     data: examples.stories
+  - type: dashboard
+    data: examples.dashboard
 permalink: /
 ---
 
