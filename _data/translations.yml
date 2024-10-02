@@ -2,3 +2,14 @@ relatedPosts:
   en: "Related Posts"
 differentLanguage:
   en: "This page is available in the following languages"
+
+# Used by the stories block type
+contentTypes:
+  DataUse:
+    en: 'Data use'
+  News:
+    en: 'News'
+  Event:
+    en: 'Event'
+  Literature:
+    en: 'Literature'

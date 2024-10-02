@@ -1,70 +1,40 @@
-stats:
-  klass: contentTypesStat
-  # title: "type: stats"
-  # description: |      # required
-  #  See [`_data/compose/examples.yml`](https://github.com/gbif/jekyll-theme-algae/blob/master/_data/compose/examples.yml#L72) for the content structure.
-  features:
-    - title: <span data-ajax-url="https://api.gbif.org/v1/grscicoll/institution?displayOnNHCPortal=true">642</span>
-      description: Institutions
-      background: /assets/images/placeholders/institutions_small.jpg
-      href: /institution/search
-    - title: <span data-ajax-url="https://api.gbif.org/v1/grscicoll/collection?&displayOnNHCPortal=true">45</span>
-      description: Collections
-      background: /assets/images/placeholders/collections_small.jpg
-      href: /collection/search
-    - title: "54 million"
-      description: Digitized specimens
-      background: /assets/images/placeholders/specimen.png
+stories:
+  title: "Latest news" 
+  # Filters
+  # Use these options to tailor the content displayed in your block.
+  filters:
+    # Content Type Filter (Optional)
+    # Define which types of content to display. If unspecified, all types are shown.
+    contentType: 
+      - DATA_USE
+      # Uncomment below to add more content types:
+      - NEWS
+      - EVENT
+      # - LITERATURE
+    
+    # Display Limit (Optional)
+    # Set the number of items to showcase. Default is 6.
+    limit: 6 
 
-couldBeAnyName:
-  title: Virginis socerque
-  description: |
-    Forth beginning form dry thing. Form seed void likeness darkness light. Can’t created third upon spirit fruitful hath likeness their. Replenish saw female night they’re you blessed all greater cattle, grass god fifth you’re. Above wherein replenish face multiply male every. Own hath lights under creeping.
-  features:
-    - title: Abundantly light years # required
-      description: |      # required
-        Also, in [for from](/about) winged doesn’t sea creepeth brought be deep abundantly light green they’re living green years.
-      href: /about
-      # img required
-      background: /assets/images/placeholders/blocks2.png
-      imageLicense: None for this image, but normally you would provide one here
-      # categories: [drawings] # optional
-    - title: Fly moving land # required
-      description: |      # required
-        Also, in [for from](/about) winged doesn’t sea creepeth brought be deep abundantly light green they’re living green years.
-      href: /about
-      background: /assets/images/placeholders/blocks2.png
-      imageLicense: None for this image, but normally you would provide one here
-    - title: Fruitful replenish # required
-      description: |      # required
-        Also, in [for from](/about) winged doesn’t sea creepeth brought be deep abundantly light green they’re living green years.
-      href: /about
-      background: /assets/images/placeholders/blocks2.png
-      imageLicense: None for this image, but normally you would provide one here
-    - title: Land man dry # required
-      description: |      # required
-        Also, in [for from](/about) winged doesn’t sea creepeth brought be deep abundantly light green they’re living green years.
-      href: /about
-      background: /assets/images/placeholders/blocks2.png
-      imageLicense: None for this image, but normally you would provide one here
-    - title: Abundantly light years # required
-      description: |      # required
-        Also, in [for from](/about) winged doesn’t sea creepeth brought be deep abundantly light green they’re living green years.
-      href: /about
-      background: /assets/images/placeholders/blocks2.png
-      imageLicense: None for this image, but normally you would provide one here
+    # Topic Filters (Optional)
+    # Use these codes to filter content by specific topics.
+    topics:
+      # Uncomment any topics you want to exclude from the block.
+      - MARINE
 
-herbariumImageExample:
+report:
   reverse: false
-  title: "Likeness darkness light"
+  title: |
+    <span id="report">OBIS-GBIF Joint Strategy for Marine Biodiversity Data</span>
   description: |      # required
-    Forth beginning form dry thing. Form seed void likeness darkness light. Can't created third upon spirit fruitful hath likeness their. Replenish saw female night they're you blessed all greater cattle, grass god fifth you're. Above wherein replenish face multiply male every. Own hath lights under creeping.
+    GBIF and OBIS signed a five-year agreement in 2020 to promote further cooperation across a wide range of activities and services between the two global biodiversity data networks.
+
+    The Letter of Agreement targets both technical collaboration covering data standards, publishing and processing; and institutional collaboration to ensure closer ties between OBIS and GBIF nodes, shared training opportunities and aligned documentation.
   # img required
-  background: https://data.nhm.ac.uk/media/d9850154-9e45-426c-8712-d030da3c1c00
+  background: /assets/images/placeholders/christoffer-engstrom.jpg
   imageLicense: |
-    *Polyptychodon* Owen, 1841 collected in United Kingdom of Great Britain and Northern Ireland. [See full record](/specimen/search?entity=1057252794&view=TABLE) (licensed under http://creativecommons.org/licenses/by/4.0/)
-  href: /about
+    Photo by <a href="https://unsplash.com/@christoffere?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Christoffer Engström</a> on <a href="https://unsplash.com/photos/photo-of-ocean-waves-at-daytime-wc9avd2RaN0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>  
   cta:
-  - text: Download report
-    href: http://example.com
+  - text: Joint strategy
+    href: https://docs.gbif.org/obis-gbif-joint-strategy/en/
     isPrimary: true
